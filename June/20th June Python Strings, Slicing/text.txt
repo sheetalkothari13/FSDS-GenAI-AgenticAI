@@ -1,0 +1,3 @@
+Python indexing,
+function vs methods
+slicing - forward, backward, skip
