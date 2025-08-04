@@ -1,0 +1,8 @@
+# Calculator Requirements
+# Note: tkinter comes built-in with Python, so no external dependencies needed for GUI calculator
+# The simple calculator only uses Python standard library
+
+# For development and testing (optional)
+pytest>=7.0.0
+black>=22.0.0
+flake8>=5.0.0 
