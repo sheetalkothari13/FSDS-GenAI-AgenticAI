@@ -1,0 +1,21 @@
+# from gtts import gTTS
+# import os
+
+# # Convert text to speech
+# text_to_speech = gTTS("Hello, this is a text to speech conversion.", lang="en")
+# text_to_speech.save("output.mp3")
+
+# # Play audio using default player
+# os.startfile("output.mp3")
+
+
+from gtts import gTTS
+import os
+
+text = input("Enter text: ").strip() or "Hello!"
+lang = input("Language code (en, hi, ta, te, etc.): ").strip() or "en"
+
+filename = "output.mp3"
+gTTS(text, lang=lang).save(filename)
+os.startfile(filename)  # Windows-only; comment out on Mac/Linux
+
